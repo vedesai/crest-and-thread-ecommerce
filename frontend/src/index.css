@@ -1,0 +1,207 @@
+/* AI Generated Code by Deloitte + Cursor (BEGIN) */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+/* Custom Theme Variables */
+@theme {
+  /* Brand Colors */
+  --color-primary: #1a1a1a;
+  --color-primary-light: #333333;
+  --color-accent: #c9a66b;
+  --color-accent-light: #d4b77c;
+  --color-accent-dark: #8b7355;
+  
+  /* Neutral Colors */
+  --color-neutral-50: #f8f7f5;
+  --color-neutral-100: #f1f0ee;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #6b6b6b;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #1a1a1a;
+  
+  /* Fonts */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  
+  /* Font Sizes */
+  --text-display-xl: 56px;
+  --text-display-lg: 40px;
+  --text-display-md: 28px;
+  --text-display-sm: 24px;
+  --text-heading: 20px;
+  --text-subheading: 16px;
+  --text-label: 14px;
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
+  
+  /* Shadows */
+  --shadow-card: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-button: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-display-xl {
+  font-size: var(--text-display-xl);
+  line-height: 1.2;
+  letter-spacing: -1.12px;
+}
+
+.text-display-lg {
+  font-size: var(--text-display-lg);
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+.text-display-md {
+  font-size: var(--text-display-md);
+  line-height: 1.2;
+}
+
+.text-display-sm {
+  font-size: var(--text-display-sm);
+  line-height: 1;
+}
+
+.text-heading {
+  font-size: var(--text-heading);
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.text-subheading {
+  font-size: var(--text-subheading);
+  line-height: 1.2;
+}
+
+.text-label {
+  font-size: var(--text-label);
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  line-height: 1.55;
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+
+.text-body-sm {
+  font-size: var(--text-body-sm);
+  line-height: 1.4;
+}
+
+.text-caption {
+  font-size: var(--text-caption);
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+}
+
+/* Color Classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-accent-dark {
+  color: var(--color-accent-dark);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-accent-light {
+  background-color: var(--color-accent-light);
+}
+
+.bg-accent-dark {
+  background-color: var(--color-accent-dark);
+}
+
+.bg-neutral-50 {
+  background-color: var(--color-neutral-50);
+}
+
+.text-neutral-500 {
+  color: var(--color-neutral-500);
+}
+
+.border-neutral-200 {
+  border-color: var(--color-neutral-200);
+}
+
+/* Shadow Classes */
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.shadow-button {
+  box-shadow: var(--shadow-button);
+}
+
+/* Hover States */
+.hover\:text-accent:hover {
+  color: var(--color-accent);
+}
+
+.hover\:bg-primary-light:hover {
+  background-color: var(--color-primary-light);
+}
+
+.hover\:bg-accent-light:hover {
+  background-color: var(--color-accent-light);
+}
+
+.hover\:text-primary:hover {
+  color: var(--color-primary);
+}
+
+.hover\:border-primary:hover {
+  border-color: var(--color-primary);
+}
+/* AI Generated Code by Deloitte + Cursor (END) */
