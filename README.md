@@ -1,55 +1,91 @@
 # Crest & Thread E-Commerce Platform
 
-A modern fashion e-commerce website built with React, TypeScript, TailwindCSS frontend and Spring Boot Java backend.
+A modern e-commerce platform built with Spring Boot backend and React frontend.
 
 ## Project Structure
 
 ```
-├── frontend/          # React + TypeScript + Vite frontend
-├── backend/           # Spring Boot Java backend  
-├── automation-tests/  # Selenium E2E tests with Python
-└── infrastructure/    # Infrastructure as Code
+├── backend/                 # Spring Boot REST API
+│   ├── src/main/java/      # Java source code
+│   ├── src/main/resources/ # Configuration files
+│   └── src/test/           # Unit tests
+└── frontend/               # React + TypeScript frontend (coming soon)
 ```
 
-## Tech Stack
+## Backend Stack
 
-### Frontend
-- React 18 with TypeScript
-- Vite build tool
-- TailwindCSS for styling
-- Vitest for unit testing
+- **Framework**: Spring Boot 3.3.0
+- **Language**: Java 21
+- **Database**: H2 (dev) / PostgreSQL (prod)
+- **ORM**: Spring Data JPA
+- **Security**: Spring Security
+- **Documentation**: OpenAPI/Swagger
+- **Testing**: JUnit 5, Mockito
 
-### Backend
-- Spring Boot 3.3.0 with Java 21
-- Spring Data JPA
-- H2 (dev) / PostgreSQL (prod)
-- Swagger/OpenAPI documentation
+## Features
 
-### Testing
-- Frontend: Vitest + React Testing Library
-- Backend: JUnit 5 + Mockito
-- E2E: Selenium + Python + Pytest
+- **Product Management**: CRUD operations for products with categories
+- **Category Management**: Organize products into categories
+- **Newsletter Subscription**: Email subscription management
+- **API Documentation**: Swagger UI for API exploration
+
+## API Endpoints
+
+### Products
+- `GET /api/v1/products` - Get all products (paginated)
+- `GET /api/v1/products/{id}` - Get product by ID
+- `GET /api/v1/products/new-arrivals` - Get new arrival products
+- `GET /api/v1/products/featured` - Get featured products
+- `GET /api/v1/products/category/{slug}` - Get products by category
+- `POST /api/v1/products` - Create a new product
+- `PUT /api/v1/products/{id}` - Update a product
+- `DELETE /api/v1/products/{id}` - Delete a product
+
+### Categories
+- `GET /api/v1/categories` - Get all categories
+- `GET /api/v1/categories/{id}` - Get category by ID
+- `GET /api/v1/categories/slug/{slug}` - Get category by slug
+- `POST /api/v1/categories` - Create a new category
+- `PUT /api/v1/categories/{id}` - Update a category
+- `DELETE /api/v1/categories/{id}` - Delete a category
+
+### Newsletter
+- `POST /api/v1/newsletter/subscribe` - Subscribe to newsletter
+- `POST /api/v1/newsletter/unsubscribe` - Unsubscribe from newsletter
+- `GET /api/v1/newsletter/check` - Check subscription status
 
 ## Getting Started
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+### Prerequisites
+- Java 21+
+- Maven 3.9+
 
-### Backend
+### Running the Backend
+
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-The API will be available at `http://localhost:8080/api/v1`
+The API will be available at `http://localhost:8080/api`
 
-## API Documentation
+### API Documentation
 
-Swagger UI: `http://localhost:8080/api/swagger-ui.html`
+Once running, access Swagger UI at:
+- `http://localhost:8080/api/swagger-ui.html`
 
----
-*AI Generated Code by Deloitte + Cursor*
+### H2 Console (Development)
+
+Access the H2 database console at:
+- `http://localhost:8080/api/h2-console`
+
+## Testing
+
+```bash
+cd backend
+mvn test
+```
+
+## License
+
+MIT License
